@@ -23,25 +23,27 @@
     (boundary
       (path pcb 0  50000 -50000  0 -50000  0 0  50000 0  50000 -50000)
     )
-    (keepout "" (polygon B.Cu 0  5500 -19000  5500 -33750  7500 -33750  7500 -19000  5500 -19000))
+    (keepout "" (polygon F.Cu 0  5500 -19000  5500 -33750  7500 -33750  7500 -19000  5500 -19000))
+    (keepout "" (polygon F.Cu 0  26000 -35000  26000 -43000  28000 -43000  28000 -35000
+            26000 -35000))
     (via "Via[0-1]_1500:400_um")
     (rule
-      (width 500)
-      (clearance 1000.1)
-      (clearance 1000.1 (type default_smd))
-      (clearance 250 (type smd_smd))
+      (width 300)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
     )
   )
   (placement
     (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
       (place C2 33000 -41000 front 0 (PN C10pf,0603))
       (place C4 39000 -22000 front 180 (PN C104,0603))
-      (place C6 32000 -3000 front 90 (PN C105,0603))
-      (place R1 25000 -14000 front 0 (PN R102,0603))
+      (place C6 16000 -3000 front 270 (PN C105,0603))
+      (place R1 25000 -18000 front 0 (PN R102,0603))
     )
     (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder::1
       (place C3 33000 -22000 front 0 (PN C103,0603))
-      (place C5 30000 -3000 front 90 (PN C105,0603))
+      (place C5 18000 -3000 front 270 (PN C105,0603))
       (place C1 33000 -38000 front 0 (PN C10pf,0603))
       (place R2 24125 -26000 front 0 (PN R331,0603))
     )
@@ -52,7 +54,7 @@
       (place JP1 15000 -22000 front 90 (PN SolderJumper_3_Bridged12))
     )
     (component LED_SMD:LED_0805_2012Metric_Castellated
-      (place D1 25000 -17000 front 0 (PN LED_ORANGE))
+      (place D1 25000 -21000 front 0 (PN LED_ORANGE))
     )
     (component LED_SMD:LED_0805_2012Metric_Castellated::1
       (place D2 24095 -28840 front 0 (PN LED_GREEN))
@@ -61,7 +63,7 @@
       (place U3 35000 -30000 front 0 (PN CH340G))
     )
     (component "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-      (place U4 24000 -5000 front 90 (PN "AMS1117-3.3"))
+      (place U4 24000 -10000 front 90 (PN "AMS1117-3.3"))
     )
     (component "Package_TO_SOT_SMD:SOT-353_SC-70-5_Handsoldering"
       (place U2 14250 -41500 front 0 (PN 74LVC1G08))
@@ -428,8 +430,8 @@
         (use_via Via[0-1]_1500:400_um)
       )
       (rule
-        (width 500)
-        (clearance 1000.1)
+        (width 300)
+        (clearance 200.1)
       )
     )
     (class GND GND
@@ -437,8 +439,8 @@
         (use_via Via[0-1]_1500:400_um)
       )
       (rule
-        (width 1000)
-        (clearance 1000.1)
+        (width 500)
+        (clearance 200.1)
       )
     )
     (class PWR +3V3 +5V VCC
@@ -446,8 +448,8 @@
         (use_via Via[0-1]_1500:400_um)
       )
       (rule
-        (width 750)
-        (clearance 1000.1)
+        (width 500)
+        (clearance 200.1)
       )
     )
   )
