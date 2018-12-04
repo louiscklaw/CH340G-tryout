@@ -35,7 +35,11 @@
 
   (setup
     (last_trace_width 0.5)
+<<<<<<< Updated upstream
     (trace_clearance 0.2)
+=======
+    (trace_clearance 0.3)
+>>>>>>> Stashed changes
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
@@ -114,7 +118,11 @@
   (net 21 "Net-(U3-Pad15)")
 
   (net_class Default "This is the default net class."
+<<<<<<< Updated upstream
     (clearance 0.2)
+=======
+    (clearance 0.3)
+>>>>>>> Stashed changes
     (trace_width 0.5)
     (via_dia 1.5)
     (via_drill 0.4)
@@ -140,8 +148,13 @@
   )
 
   (net_class GND ""
+<<<<<<< Updated upstream
     (clearance 0.2)
     (trace_width 0.75)
+=======
+    (clearance 0.3)
+    (trace_width 1)
+>>>>>>> Stashed changes
     (via_dia 1.5)
     (via_drill 0.4)
     (uvia_dia 0.3)
@@ -150,7 +163,11 @@
   )
 
   (net_class PWR ""
+<<<<<<< Updated upstream
     (clearance 0.2)
+=======
+    (clearance 0.3)
+>>>>>>> Stashed changes
     (trace_width 0.75)
     (via_dia 1.5)
     (via_drill 0.4)
@@ -198,7 +215,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBE) (tstamp 5C1377EF)
-    (at 33 22)
+    (at 34.88 19.76)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5C058164)
@@ -234,7 +251,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBE) (tstamp 5C1377DE)
-    (at 39 22 180)
+    (at 40.88 19.76 180)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5C058D78)
@@ -378,7 +395,11 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5C13779A)
+<<<<<<< Updated upstream
     (at 6.5 20)
+=======
+    (at 6.61 23.66)
+>>>>>>> Stashed changes
     (descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x06 2.54mm single row")
     (path /5C06BE8D)
@@ -556,7 +577,7 @@
   )
 
   (module Package_SO:SSOP-20_5.3x7.2mm_P0.65mm (layer F.Cu) (tedit 5A02F25C) (tstamp 5C137745)
-    (at 35 30)
+    (at 38.15 29.53)
     (descr "20-Lead Plastic Shrink Small Outline (SS)-5.30 mm Body [SSOP] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SSOP 0.65")
     (path /5C058043)
@@ -863,6 +884,7 @@
   (gr_line (start 0 0) (end 0 50) (layer Edge.Cuts) (width 0.15))
 
   (zone (net 0) (net_name "") (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+<<<<<<< Updated upstream
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (keepout (tracks not_allowed) (vias not_allowed) (copperpour allowed))
@@ -874,13 +896,19 @@
     )
   )
   (zone (net 0) (net_name "") (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+=======
+>>>>>>> Stashed changes
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (keepout (tracks not_allowed) (vias not_allowed) (copperpour allowed))
     (fill (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
+<<<<<<< Updated upstream
         (xy 26 35) (xy 26 43) (xy 28 43) (xy 28 35)
+=======
+        (xy 5.61 22.66) (xy 5.61 37.41) (xy 7.61 37.41) (xy 7.61 22.66)
+>>>>>>> Stashed changes
       )
     )
   )

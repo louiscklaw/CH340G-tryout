@@ -23,12 +23,19 @@
     (boundary
       (path pcb 0  50000 -50000  0 -50000  0 0  50000 0  50000 -50000)
     )
+<<<<<<< Updated upstream
     (keepout "" (polygon F.Cu 0  5500 -19000  5500 -33750  7500 -33750  7500 -19000  5500 -19000))
     (keepout "" (polygon F.Cu 0  26000 -35000  26000 -43000  28000 -43000  28000 -35000
             26000 -35000))
     (via "Via[0-1]_1500:400_um")
     (rule
       (width 300)
+=======
+    (keepout "" (polygon F.Cu 0  5610 -22660  5610 -37410  7610 -37410  7610 -22660  5610 -22660))
+    (via "Via[0-1]_1500:400_um")
+    (rule
+      (width 500)
+>>>>>>> Stashed changes
       (clearance 200.1)
       (clearance 200.1 (type default_smd))
       (clearance 50 (type smd_smd))
@@ -37,6 +44,7 @@
   (placement
     (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
       (place C2 33000 -41000 front 0 (PN C10pf,0603))
+<<<<<<< Updated upstream
       (place C4 39000 -22000 front 180 (PN C104,0603))
       (place C6 16000 -3000 front 270 (PN C105,0603))
       (place R1 25000 -18000 front 0 (PN R102,0603))
@@ -44,11 +52,20 @@
     (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder::1
       (place C3 33000 -22000 front 0 (PN C103,0603))
       (place C5 18000 -3000 front 270 (PN C105,0603))
+=======
+      (place C4 40880 -19760 front 180 (PN C104,0603))
+      (place C6 32000 -3000 front 90 (PN C105,0603))
+      (place R1 25000 -14000 front 0 (PN R102,0603))
+    )
+    (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder::1
+      (place C3 34880 -19760 front 0 (PN C103,0603))
+      (place C5 30000 -3000 front 90 (PN C105,0603))
+>>>>>>> Stashed changes
       (place C1 33000 -38000 front 0 (PN C10pf,0603))
       (place R2 24125 -26000 front 0 (PN R331,0603))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
-      (place J1 6500 -20000 front 0 (PN Conn_01x06))
+      (place J1 6610 -23660 front 0 (PN Conn_01x06))
     )
     (component "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
       (place JP1 15000 -22000 front 90 (PN SolderJumper_3_Bridged12))
@@ -60,7 +77,7 @@
       (place D2 24095 -28840 front 0 (PN LED_GREEN))
     )
     (component "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm"
-      (place U3 35000 -30000 front 0 (PN CH340G))
+      (place U3 38150 -29530 front 0 (PN CH340G))
     )
     (component "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
       (place U4 24000 -10000 front 90 (PN "AMS1117-3.3"))
@@ -430,7 +447,11 @@
         (use_via Via[0-1]_1500:400_um)
       )
       (rule
+<<<<<<< Updated upstream
         (width 300)
+=======
+        (width 500)
+>>>>>>> Stashed changes
         (clearance 200.1)
       )
     )
@@ -439,7 +460,11 @@
         (use_via Via[0-1]_1500:400_um)
       )
       (rule
+<<<<<<< Updated upstream
         (width 500)
+=======
+        (width 750)
+>>>>>>> Stashed changes
         (clearance 200.1)
       )
     )
@@ -448,7 +473,11 @@
         (use_via Via[0-1]_1500:400_um)
       )
       (rule
+<<<<<<< Updated upstream
         (width 500)
+=======
+        (width 750)
+>>>>>>> Stashed changes
         (clearance 200.1)
       )
     )
